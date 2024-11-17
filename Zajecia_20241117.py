@@ -1,3 +1,5 @@
-print('costam')
-print('z git hub')
+#zaladowanie biblioteki pandas
+import panda
+
+#Zasilenie csv
 

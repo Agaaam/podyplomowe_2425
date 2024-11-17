@@ -1,2 +1,3 @@
 print('costam')
-print('nowe z pycharm')
+print('z git hub')
+

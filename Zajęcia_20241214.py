@@ -28,6 +28,9 @@
 #Pandas
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
 
 #Zasilenie csv
 df = pd.read_csv('Pliki_do_cwiczen\\diabetes.csv') #zamiennie możemy stawiać "\\" oraz "/"
@@ -58,3 +61,26 @@ for col in ['glucose','bloodpressure','skinthickness','insulin','bmi','diabetesp
     df[col].replace(np.nan, mean_, inplace=True) #wpisujemy średnią tam gdzie puste
 
 df.to_csv(r'dane_po_obrobce\cukrzyca_zmodyfikowane.csv', sep=";", index=False) #..\ - oznacza ze przejdź o jeden w górę
+
+
+# print(df.iloc[ 2:4, 4:6 ])
+#gregresja logistyczna - ML
+X = df.iloc[ : , :-1] #wszystkie wiersze, wszystkie kolumny bez ostatniej
+Y = df.outcome #kolumna outcome
+# print(train_test_split(X, Y, test_size=0.2))
+#X_train, X_test, Y_train, Y_test - powyższa funkcja zwraca nam w tej kolejności ramki. Dzieli nam ramkę danych na dane testowe i dane do liczenia
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
+
+model = LogisticRegression()
+model.fit(X_train, Y_train) #Dopasowanie, uczenie
+print(f'dokładność modelu {model.score(X_test, Y_test)})')
+
+print(pd.DataFrame(confusion_matrix(Y_test, model.predict(X_test))))
+
+print('sprawdźmy czy klasy są zbalansowane')
+print(df.outcome.value_counts())
+
+print('zmiana danych')
+df1 = df.query('outcome==0').sample(n=500)
+df2 = df.query('outcome==1').sample(n=500)
+df3=pd.concat([df1, df2]) #łączenie dwóch ramek

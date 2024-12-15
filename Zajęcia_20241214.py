@@ -128,20 +128,49 @@ print('Siema')
 # #
 
 
-
-try:
-    a = int(input('Podaj dzielna: '))
-    b = int(input('Podaj dzielnik: '))
-    result = a / bprint('piesek'[6])
-
-except ValueError:
-        print('niepoprawna wartosc, jeszcze raz')
-except IndexError:
-    print('Za daleko w indeksachc')
-    raise
-
-except ZeroDivisionError:
+while True:
+    try:
+        a = int(input('Podaj dzielną:   '))
+        b = int(input('Podaj dzielnik:   '))
+        break
+    except:
+        print('Zła wartośc, jeszcze raz')
 
 print('Dalej')
 
 
+
+try:
+    a = int(input('Podaj dzielną:   '))
+    b = int(input('Podaj dzielnik:   '))
+    result = a / b
+    print('piesek'[6])
+except ValueError:
+    print('Nie da się przeksztalcic danej wejsciowej na int')
+except IndexError:
+    print('Za daleko w indeksach')
+except ZeroDivisionError:
+    print('dzielnik jest 0')
+    raise
+
+print('Dalej')
+
+
+
+data = input('Wprowadź daną:   ')
+try:
+    data = int(data)
+    print(f'{data} jest intem\n{type(data)}')
+except:
+    try:
+        data = float(data)
+        print(f'{data} jest floatem\n{type(data)}')
+    except:
+        print(f'{data} jest stringiem\n{type(data)}')
+
+
+age = int(input('Ile masz lat?  '))
+if age <= 0:
+    raise ValueError('Wiek musi byc dodatni')
+
+print('Done')

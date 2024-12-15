@@ -23,12 +23,22 @@ else:
     raise EXCEPTION("nie udało się pobrać danych")
 
 
-print(data_users)
-print(data_posts)
-print(data_comments)
+# print(data_users)
+# print(data_posts)
+# print(data_comments)
 
 #tworzenie data frames z jsonów
 df_users = pd.DataFrame(data_users)
 df_posts = pd.DataFrame(data_posts)
 df_comments = pd.DataFrame(data_comments)
 
+#print(df_users.to_string())
+
+posts_per_user = df_posts.groupby('userId', as_index = False)['id'].count()
+posts_per_user.rename(columns={'id': 'post_count'}, inplace=True)
+print(posts_per_user)
+
+
+
+#---------------------------------------
+#cwiczenie z plikiem jason

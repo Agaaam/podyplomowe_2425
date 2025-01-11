@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 from enum import Enum
 from datetime import datetime
 import asyncio
@@ -33,21 +33,41 @@ class SimlpeOrchestrator:
         # Zbiór zadań aktualnie przetwarzanych
         self.processing_tasks: set = set()
 
-    async def add_task(self, task_id: str, data: Dict, priority: TaskPriority = TaskPriority.MEDIUM) -> str:
+    async def add_task(self, task_id: str, data: Dict, priority: TaskPriority = TaskPriority.MEDIUM):
         """
-        Dodaje nowe zadanie do orkiestratora
-        Zadania są dodawane do słownika i czekają na przetworzenie
+        Dodaje nowe zadanie do orkiestratora.
+        Zadania są dodawane do słownika i czekają na przetworzenie.
         """
-        task = Task(task_id, data, priority) #Tworzymy instancję klasy task z zadaniem
-        self.tasks[task_id] = task #Dodajemy zadanie do słownika
+        task = Task(task_id, data, priority)        # Tworzymu instancję klasy Task z zadaniem
+        self.tasks[task_id] = task                  # Dodajemy zadanie do słownika
         print(f"Dodano zadanie: {task_id} z priorytetem {priority.name}")
-        return task_id #zwracamy task_id
+        return task_id                              # Zwracamy task_id
 
-#Metoda asynchroniczna main
+    async def process_tasks(self):
+        while True:
+            pending_tasks = self._get_peding_tasks()    # Pobranie listy z taskami ze statusem PENDING
+            print(pending_tasks)
+
+    def _get_peding_tasks(self) -> List[Task]:
+        pending_task = []                               # Pusta lista na początek
+        for task in self.tasks.values():
+            if task.status == TaskStatus.PENDING:       # Wyszukujemy taski ze statusem PENDING
+                pending_task.append(task)               # Dodajemy taski do list
+        def sort_key(task):                                 # Dodatkowa metoda do posortowania
+            return (task.priority.value, task.created_at)   # zgodnie z priorytetem oraz czasem stworzenia
+        pending_task.sort(key=sort_key, reverse=True)       # Sortowanie
+        return pending_task                                 # Zwrócenie listy
+
+
+
+
+# Metoda asynchroniczna main
 async def main():
-    orchestrator = SimlpeOrchestrator() #Tworzymy orkiestrator
+    orchestrator = SimlpeOrchestrator()         # Tworzymy orkiestrator
 
-    task_id = await orchestrator.add_task( #Dodajemy statyczne dane do zadania
+    processing_task = asyncio.create_task(orchestrator.process_tasks())
+
+    task_id = await orchestrator.add_task(      # Dodajemy statyczne dane do zadania
         "task1",
         {
             "station_id": "STATION001",

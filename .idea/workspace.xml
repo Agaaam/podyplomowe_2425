@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="" />
+    <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Zajęcia_20241214.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zajecia_20241214.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +44,7 @@
     "Python.Zajecia_20241215.executor": "Run",
     "Python.Zajecia_20241215_jsony.executor": "Run",
     "Python.Zajecia_20250101_API.executor": "Run",
+    "Python.Zajecia_20250111_Orkiestrator_api.executor": "Run",
     "Python.Zajęcia_20241214.executor": "Run",
     "Python.Zajęcia_20241215.executor": "Run",
     "Python.api_client.executor": "Run",
@@ -85,7 +88,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api_client.py</url>
+          <url>file://$PROJECT_DIR$/Zajecia_20250111_api_client.py</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

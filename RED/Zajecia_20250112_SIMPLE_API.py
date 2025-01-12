@@ -11,9 +11,9 @@ def get_weather_by_station(station_id: str):
         "station_id": station_id,
         "temperature": random.uniform(15,25),
         "humidity": random.uniform(40, 80),
-        "timestamp": datetime.now().timestamp()
+        "timestamp": datetime.now()
     }
 
-# if __name__= "__main__":
-uvicorn.run(app, host="127.0.0.1", port=8000)
+if __name__== "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 

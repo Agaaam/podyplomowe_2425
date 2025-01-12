@@ -1,3 +1,4 @@
+#Ten kod tworzy nam joby i kolejkuje je. Odpytuje stacje, robi zadanie
 import time
 
 from redis import Redis

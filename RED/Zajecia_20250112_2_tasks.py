@@ -17,7 +17,8 @@ def fetch_weather_data(station_id):
             if temp > 30:
                 print(f"Wysoka temperatura {temp}'C na stacji {station_id}")
 
-                redis_conn.lpush(f"temps:{station_id}", temp)
+            redis_conn.lpush(f"temps:{station_id}", temp)
+            redis_conn.ltrim(f"temps:{station_id}",0,99) #komenda mówi o tym jak dużo danych przetrzymuje
 
             return data
 

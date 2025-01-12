@@ -21,7 +21,7 @@
 # username = input('Podaj nazwe: ')
 # passwd = input('Podaj haslo:')
 # while username != standard_username or passwd != standard_passwdr:
-#     print('Zle dane')
+#     print('Zle dae')
 #     username = input('Podaj nazwe: ')
 #     passwd = input('Podaj haslo:')
 # print('Zalogowano')

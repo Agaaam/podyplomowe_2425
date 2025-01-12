@@ -12,6 +12,5 @@ def stats():
         print(f"Majniższa temperatura:  {group['temperature'].min():.2f}'C")
         print(f"Największa temperatura: {group['temperature'].max():.2f}'C")
 
-
 if __name__ == "__main__":
     stats()

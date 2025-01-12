@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RED/Zajecia_20250112_2_tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RED/Zajecia_20250112_3_Producer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RED/Zajecia_20250112_3_Producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/RED/Zajecia_20250112_3_Producer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
     "Python.Zajecia_20250111_SIMPLE_API.executor": "Run",
     "Python.Zajecia_20250111_api_client.executor": "Run",
     "Python.Zajecia_20250112_2_tasks.executor": "Run",
+    "Python.Zajecia_20250112_3_Producer.executor": "Run",
     "Python.Zajecia_20250112_SIMPLE_API.executor": "Run",
     "Python.Zajęcia_20241214.executor": "Run",
     "Python.Zajęcia_20241215.executor": "Run",

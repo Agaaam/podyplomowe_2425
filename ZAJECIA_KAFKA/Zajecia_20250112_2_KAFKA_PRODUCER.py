@@ -56,3 +56,11 @@ if __name__ == "__main__":
     monitor.add_station("STACJA002")
 
     monitor.start_monitoring()
+
+#Weryfikacja czy widzimy to na kafce, sprawdzamy to w cmd wpisują to:
+#docker ps - wyświelta listę dockerów
+#docker exec -it 3f2f8b605d83 bash - wklejamy w miejsce 3f2f8b605d83 to co pokazało się w  docker ps
+#kafka-topics.sh --bootstrap-server localhost:9092 --list
+# kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic weather_data - opis topica
+#kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic weather_data --sprawdzamy co się wrzuciło
+

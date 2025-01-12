@@ -1,6 +1,6 @@
 from confluent_kafka import Consumer, KafkaError
 import json
-from ..RED.Zajecia_20250112_2_tasks import  fetch_weather_data
+from RED.Zajecia_20250112_2_tasks import fetch_weather_data
 
 
 class WeatherDataConsumer:
@@ -26,11 +26,17 @@ class WeatherDataConsumer:
                 else:
                     print(f"Bląd: {msg.error()}")
                     break
-            data = json.loads(msg.value().decode("utf-8"))
-            station_id = data['station_id']
-            print(f"Otrzymano zadanie dla stacji: {station_id}")
+            try:
+                data = json.loads(msg.value().decode("utf-8"))
+                station_id = data['station_id']
+                print(f"Otrzymano zadanie dla stacji: {station_id}")
 
-            weather_data = fetch_weather_data(station_id, False)
+                weather_data = fetch_weather_data(station_id, False)
+                if weather_data:
+                    print(f"Pobrano dane {weather_data}")
+
+            except Exception as e:
+                print(f"Błąd przetwarzania wiadomości: {e}")
 
 
 if __name__ == "__main__":

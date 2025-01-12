@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Zajecia_20250112.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RED/Zajecia_20250112_2_tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RED/Zajecia_20250112_3_Producer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nadrobić 15.12/Nadrobić fil 4 i 5 z 15.12.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,28 +38,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.Okiestratory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20241117.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20241215.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20241215_jsony.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20250101_API.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20250111_Okiestratory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20250111_Orkiestrator_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20250111_SIMPLE_API.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajecia_20250111_api_client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajęcia_20241214.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zajęcia_20241215.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api_client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zajecia 20241215_json_pandas.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/podyplomowe_2425&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.Okiestratory.executor": "Run",
+    "Python.Zajecia_20241117.executor": "Run",
+    "Python.Zajecia_20241215.executor": "Run",
+    "Python.Zajecia_20241215_jsony.executor": "Run",
+    "Python.Zajecia_20250101_API.executor": "Run",
+    "Python.Zajecia_20250111_Okiestratory.executor": "Run",
+    "Python.Zajecia_20250111_Orkiestrator_api.executor": "Run",
+    "Python.Zajecia_20250111_SIMPLE_API.executor": "Run",
+    "Python.Zajecia_20250111_api_client.executor": "Run",
+    "Python.Zajecia_20250112_2_tasks.executor": "Run",
+    "Python.Zajecia_20250112_SIMPLE_API.executor": "Run",
+    "Python.Zajęcia_20241214.executor": "Run",
+    "Python.Zajęcia_20241215.executor": "Run",
+    "Python.api_client.executor": "Run",
+    "Python.zajecia 20241215_json_pandas.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/podyplomowe_2425/RED",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\podyplomowe_2425\RED" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\podyplomowe_2425\RED" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

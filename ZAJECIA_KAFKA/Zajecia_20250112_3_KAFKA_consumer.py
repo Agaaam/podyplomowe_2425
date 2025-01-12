@@ -18,8 +18,7 @@ class WeatherDataConsumer:
 
         with open('weather_data.csv','a') as f:
             if f.tell()==0:
-                f.write("timestamp, station_id, temperature\n")
-
+                f.write("timestamp,station_id,temperature\n")
             while True:
                 msg = self.consumer.poll(1.0)#sprawdzamy co sekunde czy są nowe wiaodmości
 

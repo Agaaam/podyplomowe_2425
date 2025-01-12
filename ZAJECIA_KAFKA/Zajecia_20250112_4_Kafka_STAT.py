@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def stats():
     df = pd.read_csv("weather_data.csv")
 

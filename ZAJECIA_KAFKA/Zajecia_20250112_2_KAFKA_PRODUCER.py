@@ -12,3 +12,11 @@ class WeatherStationMonitor:
     def add_station(self, station_id):
         self.monitored_stations.add(station_id)
         print(f"dodano stację: {station_id}")
+
+
+if __name__ == "__main__":
+    monitor = WeatherStationMonitor()
+    monitor.add_station("STACJA001")
+    monitor.add_station("STACJA002")
+
+    #monitor.start_monitoring()

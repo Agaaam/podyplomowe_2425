@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Zajecia_20250208_4_KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zajecia_20250208_4_KNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +61,7 @@
     "Python.Zajecia_20250208.executor": "Run",
     "Python.Zajecia_20250208_2.executor": "Run",
     "Python.Zajecia_20250208_3_regresja_logistyczna.executor": "Run",
+    "Python.Zajecia_20250208_4_KNN.executor": "Run",
     "Python.Zajecia_20250208_regresja_logistyczna.executor": "Run",
     "Python.Zajęcia_20241214.executor": "Run",
     "Python.Zajęcia_20241215.executor": "Run",

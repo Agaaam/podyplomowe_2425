@@ -1,7 +1,12 @@
 #regresja liniowa
+from statistics import linear_regression
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.linear_model import LinearRegression
+
+
 
 df = pd.read_csv('Pliki_do_cwiczen\\AI\\weight-height.csv')
 print(df.head(5))
@@ -33,3 +38,15 @@ print(df.head())
 
 df.rename(columns={'Gender_Female': 'Gender'}, inplace=True) #wykonaj w locie
 print(df.head())
+
+#dane na stole
+#Gender 0 - mezczyzna, 1 - kobieta
+model = LinearRegression()
+model.fit(df[['Height','Gender']], df['Weight'])
+
+
+print(f'Wspolczynnik kierunkowy: {model.coef_}\nWyraz wolny: {model.intercept_}')
+print(f'Waga = wzrost * 1.06 + plec * (-8.8) + (-102,5)')
+
+#Sprawdzenie
+print(model.predict([[192,0], [167,1], [80,1]]))

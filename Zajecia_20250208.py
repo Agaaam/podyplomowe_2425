@@ -16,10 +16,20 @@ print(f'Po zmianie jednostek: \n{df.head(5)}')
 
 #niezależne 2 kolumny - gender i height. Wynik weight
 #wszystkie płcie
-plt.hist(df.Weight, bins=50)
-plt.show()
+# plt.hist(df.Weight, bins=50)
+# plt.show()
+
+
 #osobno panie i panowie na jednym wykresie. Aby były dwa osobne to musimy uruchomish zahaszowany kod
-plt.hist(df.query("Gender=='Male'").Weight, bins=50)
-#plt.show() #
-plt.hist(df.query("Gender=='Female'").Weight, bins=50)
-plt.show()
+# plt.hist(df.query("Gender=='Male'").Weight, bins=50)
+# #plt.show() #
+# plt.hist(df.query("Gender=='Female'").Weight, bins=50)
+# plt.show()
+
+df = pd.get_dummies(df) #usuwam dane nienumeryczne
+print(df.head())
+del df['Gender_Male'] #usuwa kolumne
+print(df.head())
+
+df.rename(columns={'Gender_Female': 'Gender'}, inplace=True) #wykonaj w locie
+print(df.head())

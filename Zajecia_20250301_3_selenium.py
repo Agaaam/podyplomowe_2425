@@ -23,3 +23,5 @@ sleep(5)
 search_field.send_keys(Keys.ENTER)
 sleep(3)
 
+okno1_chrome.close()
+#okno2_firefox.close()

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291fe399-f7c2-4d81-9aae-d12efc36c867" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Zajecia_20250301_2_biblioteka_os.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zajecia_20250301_3_selenium.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zajecia_20250301_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zajecia_20250301_1_circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zajecia_20250301_1_circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zajecia_20250301_1_circle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +69,8 @@
     "Python.Zajecia_20250209_2_siatka_parametrow.executor": "Run",
     "Python.Zajecia_20250209_Nauronowe_stopnie.executor": "Run",
     "Python.Zajecia_20250301_1_circle.executor": "Run",
+    "Python.Zajecia_20250301_2_biblioteka_os.executor": "Run",
+    "Python.Zajecia_20250301_3_selenium.executor": "Run",
     "Python.Zajęcia_20241214.executor": "Run",
     "Python.Zajęcia_20241215.executor": "Run",
     "Python.api_client.executor": "Run",
@@ -122,6 +126,10 @@
           <url>file://$PROJECT_DIR$/Zajecia_20250111_api_client.py</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Zajecia_20250208_4_KNN.py</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
